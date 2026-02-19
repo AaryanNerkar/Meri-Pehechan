@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "siteTitle": "AARYAN NERKAR — Software Engineer",
+    "siteDescription": "Portfolio and resume of AARYAN NERKAR, a software engineer specializing in full-stack development, AI/ML, and cloud infrastructure.",
+    "siteUrl": "https://{{YOUR_DOMAIN}}",
+    "ogImage": "/og-image.png",
+    "twitterHandle": "@{{YOUR_TWITTER}}"
+  },
+  "hero": {
+    "name": "AARYAN NERKAR",
+    "title": "Software Engineer",
+    "tagline": "Building scalable systems at the intersection of AI and full-stack engineering.",
+    "summary": "Results-driven software engineer with expertise in full-stack web development, machine learning, and cloud-native architectures. Proven track record of delivering high-impact products that serve thousands of users. Passionate about clean code, performance optimization, and developer experience.",
+    "avatarInitials": "AN",
+    "resumePdfUrl": "/resume.pdf"
+  },
+  "contact": {
+    "email": "aaryan@{{YOUR_DOMAIN}}",
+    "phone": "+91 {{YOUR_PHONE}}",
+    "location": "Pune, India",
+    "linkedin": "https://linkedin.com/in/{{YOUR_LINKEDIN}}",
+    "github": "https://github.com/AaryanNerkar",
+    "website": "https://{{YOUR_DOMAIN}}",
+    "twitter": "https://twitter.com/{{YOUR_TWITTER}}"
+  },
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": [
+        { "name": "React / Next.js", "proficiency": 90 },
+        { "name": "TypeScript", "proficiency": 85 },
+        { "name": "Tailwind CSS", "proficiency": 90 },
+        { "name": "HTML5 / CSS3", "proficiency": 95 }
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        { "name": "Node.js / Express", "proficiency": 85 },
+        { "name": "Python / FastAPI", "proficiency": 80 },
+        { "name": "REST & GraphQL APIs", "proficiency": 80 },
+        { "name": "PostgreSQL / MongoDB", "proficiency": 75 }
+      ]
+    },
+    {
+      "category": "AI / ML",
+      "items": [
+        { "name": "PyTorch / TensorFlow", "proficiency": 70 },
+        { "name": "LLM Integration (OpenAI, Gemini)", "proficiency": 80 },
+        { "name": "Computer Vision", "proficiency": 65 },
+        { "name": "NLP & Text Analytics", "proficiency": 70 }
+      ]
+    },
+    {
+      "category": "Tools & Cloud",
+      "items": [
+        { "name": "Git / GitHub", "proficiency": 90 },
+        { "name": "Docker / Kubernetes", "proficiency": 70 },
+        { "name": "AWS / GCP / Vercel", "proficiency": 75 },
+        { "name": "CI/CD (GitHub Actions)", "proficiency": 75 }
+      ]
+    }
+  ],
+  "topSkills": [
+    "React", "Next.js", "TypeScript", "Python", "Node.js",
+    "Tailwind CSS", "PostgreSQL", "Docker", "AI/ML", "Git"
+  ],
+  "languages": [
+    { "name": "English", "level": "Fluent" },
+    { "name": "Hindi", "level": "Native" },
+    { "name": "Marathi", "level": "Native" }
+  ],
+  "certifications": [
+    "AWS Certified Cloud Practitioner",
+    "Google IT Automation with Python"
+  ],
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "TECHCORP SOLUTIONS",
+      "location": "Pune, India",
+      "startDate": "Jan 2025",
+      "endDate": "Present",
+      "bullets": [
+        "Architected and deployed a real-time analytics dashboard serving 50K+ daily active users, reducing page load time by 40% through server-side rendering and edge caching.",
+        "Led migration of monolithic REST API to microservices architecture, improving deployment frequency by 3× and reducing downtime by 60%.",
+        "Designed and implemented an AI-powered candidate screening tool that reduced manual review time by 70%, processing 500+ applications per week.",
+        "Mentored 4 junior developers through code reviews, pair programming, and weekly tech talks, resulting in a 25% improvement in team code quality metrics."
+      ],
+      "technologies": ["React", "Next.js", "Node.js", "PostgreSQL", "AWS", "Docker"]
+    },
+    {
+      "title": "Full-Stack Developer Intern",
+      "company": "INNOVATELAB INC.",
+      "location": "Remote",
+      "startDate": "Jun 2024",
+      "endDate": "Dec 2024",
+      "bullets": [
+        "Built a customer-facing dashboard with React and Tailwind CSS, increasing user engagement by 35% through improved UX and responsive design.",
+        "Developed RESTful APIs with Express.js and MongoDB, handling 10K+ requests/day with 99.9% uptime.",
+        "Implemented automated testing pipeline with Jest and Cypress, achieving 85% code coverage and catching 15+ bugs before production release."
+      ],
+      "technologies": ["React", "Express.js", "MongoDB", "Jest", "Cypress", "Tailwind CSS"]
+    },
+    {
+      "title": "Open Source Contributor",
+      "company": "VARIOUS PROJECTS",
+      "location": "Remote",
+      "startDate": "Jan 2023",
+      "endDate": "May 2024",
+      "bullets": [
+        "Contributed 30+ pull requests to popular open-source projects including documentation improvements, bug fixes, and feature additions.",
+        "Maintained a personal CLI tool with 500+ GitHub stars, managing releases and community contributions.",
+        "Organized 2 local hackathons with 100+ participants, mentoring teams on best practices in full-stack development."
+      ],
+      "technologies": ["Python", "JavaScript", "Git", "GitHub Actions", "Linux"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology in Computer Science",
+      "institution": "{{YOUR_UNIVERSITY}}",
+      "location": "Pune, India",
+      "startDate": "2021",
+      "endDate": "2025",
+      "details": "Relevant Coursework: Data Structures & Algorithms, Machine Learning, Distributed Systems, Database Management, Software Engineering.",
+      "gpa": "8.5 / 10"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Adherence Intelligence",
+      "summary": "AI-powered interview coaching platform with real-time feedback, facial analysis, and comprehensive candidate reporting.",
+      "outcomes": "Processed 500+ mock interviews with 92% positive feedback. Reduced interview prep time by 60% for users.",
+      "techStack": ["React", "Python", "FastAPI", "OpenAI", "WebRTC", "TensorFlow"],
+      "liveUrl": "https://{{PROJECT_DEMO_URL}}",
+      "githubUrl": "https://github.com/AaryanNerkar/Adherence-Intelligence",
+      "thumbnail": null,
+      "isFlagship": true
+    },
+    {
+      "title": "DevDash Analytics",
+      "summary": "Real-time developer productivity dashboard aggregating metrics from GitHub, Jira, and CI/CD pipelines into actionable insights.",
+      "outcomes": "Adopted by 3 engineering teams (40+ developers). Improved sprint velocity tracking accuracy by 45%.",
+      "techStack": ["Next.js", "TypeScript", "D3.js", "PostgreSQL", "Docker"],
+      "liveUrl": "https://{{PROJECT_DEMO_URL}}",
+      "githubUrl": "https://github.com/{{YOUR_GITHUB}}/devdash",
+      "thumbnail": null,
+      "isFlagship": true
+    },
+    {
+      "title": "CloudNote",
+      "summary": "Collaborative note-taking app with real-time sync, Markdown support, and end-to-end encryption.",
+      "outcomes": "1,200+ registered users. 99.5% uptime over 6 months.",
+      "techStack": ["React", "Firebase", "Node.js", "CryptoJS"],
+      "liveUrl": null,
+      "githubUrl": "https://github.com/{{YOUR_GITHUB}}/cloudnote",
+      "thumbnail": null,
+      "isFlagship": false
+    },
+    {
+      "title": "ML Pipeline Toolkit",
+      "summary": "Reusable Python library for building, training, and deploying ML pipelines with minimal boilerplate.",
+      "outcomes": "200+ PyPI downloads/month. Featured in PyCon India lightning talks.",
+      "techStack": ["Python", "PyTorch", "FastAPI", "Docker", "GitHub Actions"],
+      "liveUrl": null,
+      "githubUrl": "https://github.com/{{YOUR_GITHUB}}/ml-pipeline-toolkit",
+      "thumbnail": null,
+      "isFlagship": false
+    }
+  ],
+  "publications": [
+    {
+      "title": "Optimizing Transformer Inference for Edge Devices",
+      "venue": "IEEE Student Conference 2024",
+      "url": "https://{{PUBLICATION_URL}}"
+    }
+  ],
+  "awards": [
+    "1st Place — University Hackathon 2024 (AI Track)",
+    "Dean's List — 4 consecutive semesters"
+  ]
+}

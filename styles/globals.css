@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-surface-0 text-surface-800 font-sans leading-relaxed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold tracking-tight text-surface-900;
+  }
+
+  a {
+    @apply text-accent-600 hover:text-accent-700 transition-colors duration-200;
+  }
+
+  ::selection {
+    @apply bg-accent-100 text-accent-900;
+  }
+
+  /* Focus styles for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-500;
+  }
+}
+
+/* ============================================
+   COMPONENT STYLES
+   ============================================ */
+@layer components {
+  /* Skip to content link */
+  .skip-to-content {
+    @apply absolute -top-full left-4 z-50 bg-accent-600 text-white px-4 py-2 rounded-b-lg font-medium text-sm;
+    @apply focus:top-0 transition-all duration-200;
+  }
+
+  /* Section headings */
+  .section-heading {
+    @apply text-lg font-bold uppercase tracking-wider text-surface-900 border-b-2 border-accent-600 pb-2 mb-6;
+  }
+
+  /* Skill badge */
+  .skill-badge {
+    @apply inline-flex items-center px-2.5 py-1 text-xs font-medium rounded-md
+           bg-surface-100 text-surface-700 border border-surface-200;
+  }
+
+  /* Tech tag */
+  .tech-tag {
+    @apply inline-flex items-center px-2 py-0.5 text-xs font-medium rounded
+           bg-accent-50 text-accent-700 border border-accent-200;
+  }
+
+  /* Proficiency bar */
+  .proficiency-bar {
+    @apply h-1.5 rounded-full bg-surface-200 overflow-hidden;
+  }
+
+  .proficiency-fill {
+    @apply h-full rounded-full bg-accent-600 transition-all duration-700 ease-out;
+  }
+
+  /* Card hover effect */
+  .project-card {
+    @apply bg-surface-0 border border-surface-200 rounded-lg p-5
+           hover:border-accent-300 hover:shadow-md transition-all duration-300;
+  }
+
+  /* Nav link */
+  .nav-link {
+    @apply text-sm font-medium text-surface-600 hover:text-accent-600
+           transition-colors duration-200 relative;
+  }
+
+  .nav-link::after {
+    content: "";
+    @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-accent-600
+           transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  /* Contact form input */
+  .form-input {
+    @apply w-full px-3 py-2 text-sm border border-surface-300 rounded-md
+           bg-surface-0 text-surface-800 placeholder-surface-400
+           focus:border-accent-500 focus:ring-1 focus:ring-accent-500/20
+           transition-colors duration-200;
+  }
+
+  /* Print-only QR container */
+  .print-qr {
+    @apply hidden;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm 15mm;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  html {
+    font-size: 11pt;
+  }
+
+  body {
+    background: white !important;
+    color: #1e293b !important;
+    line-height: 1.45;
+  }
+
+  /* Hide interactive elements */
+  .no-print,
+  nav,
+  .skip-to-content,
+  button:not(.print-trigger),
+  .contact-form,
+  footer {
+    display: none !important;
+  }
+
+  /* Show print-only elements */
+  .print-only {
+    display: block !important;
+  }
+
+  .print-qr {
+    display: flex !important;
+  }
+
+  /* Ensure two-column layout */
+  .resume-layout {
+    display: grid !important;
+    grid-template-columns: 260px 1fr !important;
+    gap: 24px !important;
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  /* Sidebar styling for print */
+  .sidebar-print {
+    background: #f1f5f9 !important;
+    padding: 16px !important;
+    border-radius: 4px !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Headings */
+  h1 {
+    font-size: 20pt !important;
+  }
+  h2 {
+    font-size: 13pt !important;
+  }
+  h3 {
+    font-size: 11pt !important;
+  }
+
+  /* Section heading */
+  .section-heading {
+    font-size: 11pt !important;
+    border-bottom-width: 1.5px !important;
+    padding-bottom: 4px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* No page breaks inside items */
+  .experience-item,
+  .project-card,
+  .education-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Links — show URL in print */
+  a[href^="http"]:not(.no-print-url)::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #64748b;
+    word-break: break-all;
+  }
+
+  /* Tech tags */
+  .tech-tag {
+    border: 1px solid #cbd5e1 !important;
+    background: #f8fafc !important;
+    color: #334155 !important;
+    font-size: 8pt !important;
+    padding: 1px 4px !important;
+  }
+
+  /* Skill badge */
+  .skill-badge {
+    font-size: 8pt !important;
+    padding: 1px 4px !important;
+  }
+
+  /* Proficiency bar */
+  .proficiency-bar {
+    height: 4px !important;
+  }
+
+  .proficiency-fill {
+    background: #2563eb !important;
+  }
+
+  /* Project card */
+  .project-card {
+    padding: 8px 0 !important;
+    border: none !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* Reduce spacing */
+  section {
+    margin-bottom: 12px !important;
+  }
+}
+
+/* ============================================
+   UTILITY STYLES
+   ============================================ */
+@layer utilities {
+  /* Hide visually but keep available for screen readers */
+  .sr-only-focusable:not(:focus):not(:focus-within) {
+    @apply sr-only;
+  }
+
+  /* Print-only display */
+  .print-only {
+    @apply hidden;
+  }
+
+  /* Smooth entrance animation */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
