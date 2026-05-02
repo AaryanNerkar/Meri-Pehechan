@@ -133,6 +133,8 @@
       "outcomes": "Generates a comprehensive summary report at end of interview with a personalized roadmap plan.",
       "techStack": ["Python", "AI", "FastAPI", "OpenAI", "WebRTC", "TensorFlow", "Computer Vision"],
       "liveUrl": null,
+      "linkedinUrl": "https://www.linkedin.com/posts/aaryan-nerkar-16214b2b7_hirebyte-ai-interview-platform-upload-ugcPost-7446929228706795520-Mzl9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEwEixoBZW7B4HSmubG8Wl9awWKHfK_Vgzo",
+      "linkedinTooltip": "See the full demo & post on LinkedIn",
       "githubUrl": null,
       "thumbnail": null,
       "isFlagship": true
@@ -143,6 +145,8 @@
       "outcomes": "Multi-crop support: Precisely identifies diseases across Tomato, Potato, Onion, and Apple. Provides instant diagnosis with treatment recommendations.",
       "techStack": ["Python", "Deep Learning", "TensorFlow", "FastAPI", "Computer Vision"],
       "liveUrl": null,
+      "linkedinUrl": "https://www.linkedin.com/posts/aaryan-nerkar-16214b2b7_ai-machinelearning-webdevelopment-ugcPost-7442881297984880640-Y4He?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEwEixoBZW7B4HSmubG8Wl9awWKHfK_Vgzo",
+      "linkedinTooltip": "See the full demo & post on LinkedIn",
       "githubUrl": null,
       "thumbnail": null,
       "isFlagship": true
@@ -163,6 +167,8 @@
       "outcomes": "Auto-marks attendance with date and time. Saves new faces instantly to the database.",
       "techStack": ["Python", "CNN", "OpenCV", "Deep Learning"],
       "liveUrl": null,
+      "linkedinUrl": "https://www.linkedin.com/posts/aaryan-nerkar-16214b2b7_imagine-marking-your-attendance-just-share-7322314826981031938-nLKF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEwEixoBZW7B4HSmubG8Wl9awWKHfK_Vgzo",
+      "linkedinTooltip": "See the full demo & post on LinkedIn",
       "githubUrl": null,
       "thumbnail": null,
       "isFlagship": false
@@ -172,7 +178,8 @@
       "summary": "Analyzes user behavior patterns to predict personality type.",
       "outcomes": "Uses Logistic Regression to classify personality types from behavioral data.",
       "techStack": ["Python", "Scikit-learn", "Logistic Regression", "Data Science"],
-      "liveUrl": null,
+      "liveUrl": "https://agent-699694d1dcb307cf0c3f39f1--knowyourselves.netlify.app/",
+      "liveTooltip": "Try the live app",
       "githubUrl": null,
       "thumbnail": null,
       "isFlagship": false

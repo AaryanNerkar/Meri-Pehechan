@@ -83,6 +83,43 @@
            hover:border-accent-300 hover:shadow-md transition-all duration-300;
   }
 
+  .btn-linkedin {
+    @apply inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full
+           border text-xs font-semibold no-underline;
+    border-width: 1.5px;
+    border-color: #0A66C2;
+    color: #0A66C2;
+    transition: all 0.2s ease;
+  }
+
+  .btn-linkedin:hover {
+    background: #0A66C2;
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(10, 102, 194, 0.4);
+    transform: translateY(-1px);
+  }
+
+  .btn-live {
+    @apply inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full
+           border text-xs font-semibold no-underline;
+    border-width: 1.5px;
+    border-color: #2563eb;
+    color: #2563eb;
+    transition: all 0.2s ease;
+  }
+
+  .btn-live:hover {
+    background: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(37, 99, 235, 0.4);
+    transform: translateY(-1px);
+  }
+
+  .social-icon-link {
+    @apply inline-flex items-center justify-center text-surface-400 hover:text-accent-600
+           transition-all duration-200 hover:scale-110;
+  }
+
   /* Nav link */
   .nav-link {
     @apply text-sm font-medium text-surface-600 hover:text-accent-600
