@@ -168,9 +168,10 @@ export default function ContactForm({ email }) {
           <div className="mt-4 p-4 bg-surface-50 rounded-lg border border-surface-200">
             <h3 className="text-sm font-bold text-surface-800 mb-2">Open to:</h3>
             <ul className="space-y-1 text-sm text-surface-600">
-              <li>• Full-time positions (onsite & remote)</li>
-              <li>• Freelance / contract projects</li>
+              <li>• Internship opportunities (on-site & remote)</li>
+              <li>• Freelance / contract AI projects</li>
               <li>• Open source collaboration</li>
+              <li>• Hackathons and research collaborations</li>
               <li>• Speaking & mentoring opportunities</li>
             </ul>
           </div>

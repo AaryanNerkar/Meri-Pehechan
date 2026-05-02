@@ -33,7 +33,7 @@ export default function Header({ hero, contact }) {
           {/* Right: Quick actions */}
           <div className="flex flex-row md:flex-col gap-3 shrink-0 no-print">
             <Link
-              href="/resume"
+              href={hero.resumePdfUrl || '/resume'}
               className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold
                          bg-accent-600 text-white rounded-md hover:bg-accent-700
                          transition-colors duration-200 shadow-sm"
@@ -41,7 +41,7 @@ export default function Header({ hero, contact }) {
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
-              Download Resume
+              Resume
             </Link>
             <a
               href="#contact"
